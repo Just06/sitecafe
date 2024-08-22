@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ajout feuille de style css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Style CSS pour les écrans de 500 pixels de large ou moins -->
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 500px)"
+      href="/css/style.mobile.css"
+    />
+    <!-- ajout link js pour icone fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/4e0463ce64.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ajout lien police google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Café Florette | Accueil</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- lien pr naviguer sur pages du site -->
+      <nav>
+        <h1>
+          <!-- lien cliquable, les user pourront revenir page accueil si clique sur le h1 -->
+          <a href="/index.html">CAFE FLORETTE</a>
+        </h1>
+        <!-- ul>(li>a)*3 -->
+        <ul>
+          <!-- liste avec liens pr naviguer vers autres pages du site-->
+          <!-- class active permet à user de voir sur quel onglet on se situe -->
+          <li><a class="active" href="/index.html">Accueil</a></li>
+          <li><a href="/where.html">Nous trouver</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- section : element semantique qui signifie qu'il va y avoir un gros bloc de contenu -->
+    <!-- section avec class vp -->
+    <section class="vp">
+      <div class="vp-content">
+        <h1>Toute l'expertise française dans un café</h1>
+        <!-- div pour créer séparateur -->
+        <div class="separator"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          incidunt ut, quae dolorem, ratione ipsa a beatae est totam doloribus
+          repellat. Nostrum veniam neque possimus explicabo. Rerum laborum ipsum
+          assumenda?
+        </p>
+        <!-- transformation d'un lien en bouton -->
+        <a href="/where.html" class="btn btn-primary my-10">DECOUVRIR</a>
+      </div>
+    </section>
+    <!-- section features icone 1 -->
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <!-- lien pris sur fontawesome avec balise i  -->
+          <i class="fa-solid fa-mug-saucer fa-3x my-10"></i>
+          <h2>Un nouveau café par jour</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non
+            autem iste natus fugit repudiandae quam ratione laborum itaque nisi?
+          </p>
+        </div>
+        <!-- section features icone 2  -->
+        <div class="feature">
+          <!-- lien pris sur fontawesome avec balise i -->
+          <i class="fa-solid fa-clock fa-3x my-10"></i>
+          <h2>Ouvert 24h/24 et 7j/7</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non
+            autem iste natus fugit repudiandae quam ratione laborum itaque nisi?
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="person"></div>
+    <!-- section reservation -->
+    <section class="reservation">
+      <!-- div container pour img largeur max et centrer -->
+      <div class="container">
+        <!-- h2+p+a -->
+        <h2>Réservez des maintenant</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam,
+          sint veniam id dignissimos, voluptatibus optio exercitationem
+          necessitatibus eum quidem commodi iure fugiat totam quisquam. Fugit
+          eos magnam cupiditate dolorum.
+        </p>
+        <!-- ajout class btn btn-dark -->
+        <a href="./contact.html" class="btn btn-dark my-20">RESERVEZ</a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <p>Copyright &#169; - Café Florette - 2024 - Guerrier Justine -</p>
+    </footer>
+  </body>
+</html>

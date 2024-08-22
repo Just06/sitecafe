@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ajout feuille de style css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Styles CSS pour les écrans de 500 pixels de large ou moins -->
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 500px)"
+      href="/css/style.mobile.css"
+      <!--
+      ajout
+      link
+      js
+      pour
+      icone
+      fontawesome
+      --
+    />
+    <script
+      src="https://kit.fontawesome.com/4e0463ce64.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ajout lien police google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Café Florette | Accueil</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- lien pr naviguer sur pages du site -->
+      <nav>
+        <h1>
+          <!-- lien cliquable, les user pourront revenir page accueil si clique sur le h1 -->
+          <a href="/index.html">CAFE FLORETTE</a>
+        </h1>
+        <!-- ul>(li>a)*3 -->
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <!-- liste avec liens pr naviguer vers autres pages du site-->
+          <!-- class active permet à user de voir sur quel onglet on se situe -->
+          <li><a class="active" href="/where.html">Nous trouver</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="where">
+      <div class="container">
+        <img class="where-img" src="images/map.png" alt="map" />
+        <div class="where-text">
+          <!-- permet d'ajouter une ligne dessous où nous trouver -->
+          <h1 class="underline">Où nous trouver</h1>
+          <h3>
+            <!-- classe chip permet de mettre une bulle -->
+            Métro : ligne <span class="chip chip-purple">4</span> - Odéon, ligne
+            <span class="chip chip-brown">11</span> - Mabillion
+          </h3>
+          <p>Adresse : 131 Boulevard Saint-Germain, 75006 Paris</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <p>Copyright &#169; - Café Florette - 2024</p>
+    </footer>
+  </body>
+</html>
+
+<!-- copier coller en enlevant ce qu'il y a entre header et footer -->

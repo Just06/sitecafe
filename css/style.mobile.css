@@ -1,0 +1,82 @@
+/* sur mobile : iphone11 par exemple
+partie du bas ok juste un peu de padding sur le lorem
+photo ok
+les icones doivent etre l'une au dessus de l'autre
+le lorem depasse par rapport à l'img
+reduire padding
+nav et titre centré */
+
+/* ajouter nouvelle feuille de style css */
+
+/* header */
+
+/* on enleve le float */
+.header nav h1 {
+  float: none;
+  text-align: center;
+}
+
+/* on enleve le float */
+.header nav ul {
+  float: none;
+}
+
+/* on enleve le float */
+.header nav ul li {
+  float: none;
+}
+
+.header nav ul li a {
+  padding: 10px;
+  text-align: center;
+}
+
+/*  vp  */
+
+.vp-content {
+  padding-top: 50px;
+}
+
+.vp-content h1 {
+  font-size: 2rem;
+}
+
+/* features */
+
+.feature {
+  float: none;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* WHERE */
+.where {
+  padding: 80px 20px 50px 20px;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.where-img {
+  float: none;
+  width: 80%;
+  border: 0px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.where-text {
+  float: none;
+  width: 100%;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 50px 0px 50px 0px;
+  min-height: 100vh;
+}
+
+résumé: on va retirer principalement le float pour que les elements ne soit plus
+  en ligne mais en colonne pour la version mobile. Réglage de quelques margin et centrer img 

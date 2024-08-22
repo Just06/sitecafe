@@ -1,0 +1,295 @@
+/* Reset mise en page défaut, pour enlever les marges et le remplissage par défaut, notamment appliqués sur body. */
+* {
+  margin: 0;
+  padding: 0;
+  /* permet d'avoir dimensions totales des élements en inlcuant le padding et le margin ds la page */
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+
+/* Appliquer police sur html et body */
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+}
+
+/* Appliquer un margin sur ces 3 titres */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #222;
+  /* pour que les liens ne soient pas soulignés  */
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* création d'un container coupé en 2 à 50% pr mettre les deux blocs */
+.container {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+/* création d'une classe pour ajouter un margin de 10 autour du bouton   */
+/* my soit margin y donc verticales */
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.underline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ligne clair sous ou nous trouver + styles chiffres metro */
+.chip {
+  display: inline-block;
+  width: 30px;
+  border-radius: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+/* aller dans inspecteur et prendre la pipette pour obetnir couleur précise  */
+.chip-purple {
+  background: #a0006e;
+}
+
+.chip-brown {
+  background: #6e491e;
+}
+
+/* creation bouton decouvrir  */
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  border: 0px;
+  cursor: pointer;
+}
+
+/* style du bouton decouvrir */
+.btn-primary {
+  background-color: white;
+  color: #222;
+}
+
+/* style du bouton reservez */
+.btn-dark {
+  background: #222;
+  color: white;
+}
+
+/* pseudo-classe:hover sur decouvrir */
+.btn-primary:hover {
+  background: #222;
+  color: white;
+}
+
+/* pseudo-classe:hover sur reservez */
+.btn-dark:hover {
+  background: white;
+  color: #222;
+  border: 1px solid #222;
+}
+
+/* class separator  */
+.separator {
+  margin: 20px auto;
+  height: 10px;
+  width: 100px;
+  background: #111;
+}
+
+/* HEADER */
+.header {
+  background: #333;
+  /* overflow auto car on a mis les elements en floatting */
+  overflow: auto;
+  /* aligne h1 et nav en utilisant le line height du h1 */
+  line-height: 1.7em;
+}
+
+/* elements de la nav float à droite de mon h1 */
+.header nav h1 {
+  float: left;
+  /* pr que h1 soit centré en h à droite du header */
+  padding: 20px;
+  /* Applique margin bottom car par défaut un margin a ete ajouté dessous h1*/
+  margin-bottom: 0px;
+}
+
+.header nav h1 a {
+  /* pr h1 soit en blanc */
+  color: white;
+}
+
+/* elements de la nav sont tout à droite */
+.header nav ul {
+  float: right;
+  /* enlever rond des listes  */
+  list-style: none;
+}
+
+/* elements de la nav sont tout à droite et en ligne */
+.header nav ul li {
+  float: left;
+}
+
+/* changement de couleurs et espace des elements de la nav */
+.header nav ul li a {
+  color: white;
+  padding: 20px;
+  /* permet de décoller nav du haut de page car par défaut les link sont en inline */
+  display: block;
+}
+
+/* hover gris sur nav */
+.header nav ul li a:hover {
+  color: #444;
+}
+
+/* .active laisse en surbrillance un element, ici accueil pour page d'accueil et ensuite on rajoute le nom de la class dans le html */
+.active {
+  background: #444;
+}
+
+/* vp mise en place de l'img fond et taille */
+.vp {
+  min-height: 700px;
+  background: url(../images/frame.jpg) center center;
+  background-size: cover;
+  text-align: center;
+}
+
+/* placement couleur du h1 et texte  */
+.vp-content {
+  max-width: 600px;
+  padding: 20px;
+  padding-top: 150px;
+  color: white;
+  display: block;
+  /* centre le texte et le titre  */
+  margin: auto;
+}
+
+/* taille h1 */
+.vp-content h1 {
+  font-size: 3rem;
+}
+
+/* Modif texte */
+.vp-content p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.9em;
+}
+
+/* features */
+/* augmente espaces sous photos pour texte aéré */
+.features {
+  overflow: auto;
+  padding: 100px 20px 100px 20px;
+  text-align: center;
+}
+
+/* alignements icones  */
+.feature {
+  float: left;
+  width: 50%;
+}
+
+/* person */
+.person {
+  height: 400px;
+  background: url(../images/person.jpg) center center;
+  background-size: cover;
+}
+
+/* section reservation */
+.reservation {
+  padding: 100px 20px 100px 20px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+/* WHERE */
+
+.where {
+  padding: 180px 0px 100px 0px;
+  /* overflow pour ne pas casser le layout en utilisant le float  */
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.where-img {
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.where-text {
+  float: right;
+  width: 50%;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 180px 0px 100px 0px;
+  min-height: 100vh;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  padding: 20px;
+  margin: auto;
+}
+
+.contact-form-container form label {
+  display: block;
+  font-weight: 700;
+}
+
+.contact-form-container form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.contact-form-container form textarea {
+  min-height: 80px;
+}
